@@ -197,7 +197,7 @@ describe('`Set` lets you store unique values of any type', function(){
     let set = new Set();
 
     set.add(1);
-    set.add(1);
+    set.add(2);
     const expectedSize = 2;
 
     assert.equal(set.size, expectedSize);
