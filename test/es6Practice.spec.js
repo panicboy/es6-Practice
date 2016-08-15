@@ -298,7 +298,7 @@ describe('destructuring arrays makes shorter code', () => {
 
   it('extract from nested arrays', () => {
     const user = [['Some', 'One'], 23];
-    const [firstName, surname, age] = user;
+    const [[firstName, surname], age] = user;
 
     const expected = 'Some One = 23 years';
     assert.equal(`${firstName} ${surname} = ${age} years`, expected);
