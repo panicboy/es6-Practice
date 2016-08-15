@@ -116,7 +116,7 @@ describe('spread with arrays', () => {
   });
 
   it('in combination with rest', function() {
-    const [a, b, ...rest] = [...[0, 1, 2, 3, 4, 5]];
+    const [a, b, ...rest] = [1, 2, 3, 4, 5];
     assert.equal(a, 1);
     assert.equal(b, 2);
     assert.deepEqual(rest, [3, 4, 5]);
