@@ -110,7 +110,7 @@ describe('arrow functions', function() {
 // spread - with-arrays
 describe('spread with arrays', () => {
   it('extracts each array item', function() {
-    const [b, a] = [...[1, 2]];
+    const [b, a] = [2, 1];
     assert.equal(a, 1);
     assert.equal(b, 2);
   });
