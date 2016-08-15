@@ -162,7 +162,7 @@ describe('`Map` is a key/value map', function(){
   it('`has()` tells if map has the given key', function() {
     let map = new Map();
     map.set('key', 'value');
-    const hasIt = map.hazz;
+    const hasIt = map.has('key');
 
     assert.equal(hasIt, true);
   });
