@@ -153,8 +153,8 @@ describe('`Map` is a key/value map', function(){
 
   it('provides `new Map().set()` to add key+value pair, `get()` to read it by key', function() {
     let map = new Map();
-    map.set('key', null);
-    const value = map.get();
+    map.set('key', 'value');
+    const value = map.get('key');
 
     assert.equal(value, 'value');
   });
