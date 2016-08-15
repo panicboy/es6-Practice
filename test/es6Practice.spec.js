@@ -235,7 +235,7 @@ describe('a template string, is wrapped in ` (backticks) instead of \' or "', fu
   describe('by default, behaves like a normal string', function() {
 
     it('just surrounded by backticks', function() {
-      var str = ``;
+      var str = `like a string`;
       assert.equal(str, 'like a string');
     });
 
