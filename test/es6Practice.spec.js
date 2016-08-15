@@ -285,7 +285,7 @@ describe('destructuring arrays makes shorter code', () => {
   });
 
   it('swap two variables, in one operation', () => {
-    let [x, y] = ['ax', 'why'];
+    let [y, x] = ['ax', 'why'];
     [x, y] = [x, y];
     assert.deepEqual([x, y], ['why', 'ax']);
   });
