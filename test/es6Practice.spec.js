@@ -25,7 +25,7 @@ describe('`let` restricts the scope of the variable to the current block', () =>
 
     it('`let` use in `for` loops', () => {
       let obj = {x: 1};
-      for (var key in obj) {}
+      for (let key in obj) {}
       assert.throws(() => console.log(key));
     });
 
