@@ -97,7 +97,7 @@ describe('arrow functions', function() {
   });
 
   it('many params require parens', () => {
-    var func = param => param + param1;
+    var func = (param, param1) => param + param1;
     assert.equal(func(23, 42), 23+42);
   });
 
