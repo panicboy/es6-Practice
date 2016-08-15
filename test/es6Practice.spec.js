@@ -123,7 +123,7 @@ describe('spread with arrays', () => {
   });
 
   it('spreading into the rest', function() {
-    const [...rest] = [...[,1, 2, 3, 4, 5]];
+    const [...rest] = [1, 2, 3, 4, 5];
     assert.deepEqual(rest, [1, 2, 3, 4, 5]);
   });
 
