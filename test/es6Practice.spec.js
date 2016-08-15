@@ -138,7 +138,7 @@ describe('spread with arrays', () => {
     });
 
     it('pass an array of numbers to Math.max()', function() {
-      const max = Math.max(...[23, 0, 42, 43]);
+      const max = Math.max(...[23, 0, 42]);
       assert.equal(max, 42);
     });
   });
