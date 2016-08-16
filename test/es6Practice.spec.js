@@ -340,7 +340,7 @@ describe('default parameters make function parameters more flexible', () => {
   });
 
   it('it is evaluated at run time', function() {
-    let defaultValue;
+    let defaultValue = 42;
     function xhr(method = `value: ${defaultValue}`) {
       return method;
     }
