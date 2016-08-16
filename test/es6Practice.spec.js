@@ -456,7 +456,7 @@ describe('generator - `yield` is used to pause and resume a generator function',
   });
 
   it('converting a generator to an array resumes the generator until all values are received', () => {
-    let values = Array.from();
+    let values = Array.from(generator);
     assert.deepEqual(values, ['hello', 'world']);
   });
 
