@@ -432,8 +432,8 @@ describe('a generator returns an iterable object', function() {
   });
 
   it('can be looped with `for-of`, which expects an iterable', function() {
-    function* iterateForOf(){
-      for (let value of {}) {
+    function iterateForOf(){
+      for (let value of generator) {
         // no statements needed
       }
     }
