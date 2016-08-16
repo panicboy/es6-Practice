@@ -463,7 +463,7 @@ describe('generator - `yield` is used to pause and resume a generator function',
   describe('after the first `generator.next()` call', function() {
 
     it('the value is "hello"', function() {
-      const {value} = generator.next;
+      const {value} = generator.next();
       assert.equal(value, 'hello');
     });
 
