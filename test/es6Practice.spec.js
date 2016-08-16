@@ -319,7 +319,7 @@ describe('destructuring arrays makes shorter code', () => {
 // Default parameters - basics
 describe('default parameters make function parameters more flexible', () => {
   it('define it using an assignment to the parameter `function(param=1){}`', function() {
-    let number = (int) => int;
+    let number = (int = 0) => int;
 
     assert.equal(number(), 0);
   });
