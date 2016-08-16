@@ -390,7 +390,7 @@ describe('generator can be created in multiple ways', function() {
   it('inside a class the same way', function() {
     const generatorName = 'g';
     class Klazz {
-      [generatorName]() {}
+      *[generatorName]() {}
     }
     assertIsGenerator(new Klazz().g());
   });
