@@ -350,7 +350,7 @@ describe('default parameters make function parameters more flexible', () => {
   });
 
   it('it can also be a function', function() {
-    let defaultValue;
+    let defaultValue = () => 42;
     function fn(value = defaultValue()) {
       return value;
     }
@@ -363,7 +363,7 @@ describe('default parameters make function parameters more flexible', () => {
 describe('generator can be created in multiple ways', function() {
 
   it('the most common way is by adding `*` after `function`', function() {
-    function g() {}
+    function* g() {}
     assertIsGenerator(g());
   });
 
